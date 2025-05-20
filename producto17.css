@@ -1,0 +1,50 @@
+h1 { 
+color:#cc0000;
+font-size: 50px;
+font-family: georgie;
+font-weight: bold;
+font-style: italico;	
+text-align: center;}
+
+h2 {color: #cc0000;
+	font-size: 25px;
+	font-family: serif;
+	font-weight: deni-lght;
+	font-style: normal;
+	text-align: center;
+
+}
+p{
+	color:#CC0000;
+	font-size: 20px;
+	display: flex; 
+	margin-right: 500px;
+	float: right;
+	right: 100px;
+
+}
+.texto {color:#CC0000;
+	font-size: 300px;
+	font-family: times;
+	text-align: center;
+	float: left;
+	margin-right: 65px;
+	position: relative;
+	top: -500px;
+	left: 700px;
+}
+.boton{
+	background-color:#000000;
+	color: white;
+	border-color:#cc0000 ;
+	font-size: 30px;
+	font-family: serif;
+
+}
+.img17{
+	width: 350px;
+	height: 500px;
+	border-radius: 25px;
+	display: float;
+	margin-right: 100px;
+}

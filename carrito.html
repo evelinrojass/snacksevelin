@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> portada de mi pagina web </title>
+  <div class="carrito" onclick="verCarrito()" style="cursor: pointer; font-size: 18px;">
+      🛒 Carrito (<span id="contador">0</span>)
+    </div>
+  <img class="alinear" src="file:///C:/Users/usuario/OneDrive/Documentos/mipaginaweb/logopagina.jpg" alt=""><br><br>
+  <a href="https://www.instagram.com/snacksss_culichi?igsh=MXF3ZmxtOW1tdnVlMA%3D%3D&utm_source=qr"><img class="logos" src="logoinstagram.jpg"></a>
+  <a href="https://www.facebook.com/share/1AmVg56Sti/?mibextid=wwXIfr"><img class="logos" src="logofacebook.jpg"></a>
+  <link rel="stylesheet" type="text/css" href="portadapagina.css">
+</head>
+<body background="file:///C:/Users/usuario/OneDrive/Documentos/mipaginaweb/fondoopagina.jpg">
+  <center>
+    <h1> "CULICHI SNACKS" </h1>
+    <p> ¡PRUEBA NUESTROS RICOS SNACKS AL ESTILO CULIACAN Y NO TE ARREPENTIRAS! </p>
+    <div>
+    <p> ¡CONSIENTE A TU PAREJA, AMIGOS O FAMILIARES AL POBRAR LOS DELICIOSOS SNACKS! </p>
+    </div><br><br>
+
+    
+  <form id="snacksform">
+    <select id="snacks" name="snacks">
+      <option >"PRUEBA NUESTRO MENU"</option>
+      <option value="dulces">Snacks Dulces</option>
+      <option value="enchilosos">Snacks Enchilosos</option>
+    </select>
+  </form>
+
+  <script>
+    document.getElementById('snacks').addEventListener('change', function () {
+      const tipo = this.value;
+
+      switch(tipo) {
+        case 'dulces':
+          window.location.href = 'snacksdulces.html';
+          break;
+        case 'enchilosos':
+          window.location.href = 'snacksenchilosos.html';
+          break;
+        default:
+          // No hacer nada si no se selecciona una opción válida
+          break;
+      }
+    });
+  </script>
+
+  <h2> "LOSFAVORITOS</h2>
+  </center>
+
+
+
+</body>
+</html>

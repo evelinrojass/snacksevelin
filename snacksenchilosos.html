@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<a href="index.html"><button class="boton"> ¡SALIR! </button></a>
+	<link rel="stylesheet" type="text/css" href="snacksenchilosos.css">
+</head>
+<script>
+  // Función para agregar un producto al carrito
+  function agregarAlCarrito(producto) {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    carrito.push(producto);
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    alert("${producto}" fue agregado al carrito.);
+    actualizarContador();
+  }
+
+  // Función para contar y mostrar cuántos productos hay en el carrito
+  function actualizarContador() {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    const contadorElemento = document.getElementById('contador');
+    if (contadorElemento) {
+      contadorElemento.textContent = carrito.length;
+    }
+  }
+
+  // Función para ver lo que hay en el carrito
+  function verCarrito() {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    if (carrito.length === 0) {
+      alert("Tu carrito está vacío.");
+    } else {
+      alert("Productos en tu carrito:\n" + carrito.join("\n"));
+    }
+  }
+
+  // Llamamos esto cuando carga la página para mostrar el número correcto
+  document.addEventListener('DOMContentLoaded', actualizarContador);
+</script>
+<body background="file:///C:/Users/usuario/OneDrive/Documentos/mipaginaweb/fondoopagina.jpg">
+
+	<h1> "SNACKS ENCHILOSOS" </h1>
+	
+	<h2> ¡DALE UN GIRO PICANTE A TU DIA CON NUESTROS IRRESISTIBLES SNACKS ENCHILOSOS! </h2><br><br><br>	
+     
+    <div class="catalogo">
+  <div class="contenedor">
+    <a href="producto1.html"><img class="img1" src="imagenes/img1.jpg" alt="">
+    <p> ¡PAPAS PREPARADAS! </p></a>
+  </div>
+  <div class="contenedor">
+    <a href="producto2.html"><img class="img2" src="imagenes/img2.jpg" alt=""></a>
+    <p> ¡CHETOS PREPARADOS! </p>
+  </div>
+  <div class="contenedor">
+    <a href="producto3.html"><img class="img3" src="imagenes/img3.jpg" alt=""></a>
+    <p> ¡SABRITAS CON GOMITAS PREPARADAS! </p>
+  </div>
+  <div class="contenedor">
+    <a href="producto4.html"><img class="img4" src="imagenes/img4.jpg" alt=""></a>
+    <p> ¡SABRI-FRUT CON TAKIS! </p>
+  </div>
+  <div class="contenedor">
+    <a href="producto5.html"><img class="img5" src="imagenes/img5.jpg" alt=""></a> 
+    <p> ¡GOMITAS BAÑADAS EN CHAMOY! </p>
+  </div>
+  <div class="contenedor">
+    <a href="producto6.html"><img class="img6" src="imagenes/img6.jpg" alt=""></a>
+    <p> ¡SALCHICHAS ASADAS PREPARADAS! </p>
+  </div>
+  <div class="contenedor">
+    <a href="producto7.html"><img class="img7" src="imagenes/img7.jpg" alt=""></a>
+    <p> ¡MARUCHAN PREPARADA! </p>
+  </div>
+  <div class="contenedor">
+    <a href="producto8.html"><img class="img8" src="imagenes/img8.jpg" alt=""></a>
+    <p> ¡BULDAK ESPECIAL!</p>
+  </div>
+  <div class="contenedor">
+    <a href="producto9.html"><img class="img9" src="imagenes/img9.jpg" alt=""></a>
+    <p> ¡TOSTI-AGUACHILE! </p>
+  </div>
+  <div class="contenedor">
+    <a href="producto10.html"><img class="img10" src="imagenes/img10.jpg" alt=""></a>
+    <p> ¡TOSTIESQUITES! </p>
+  </div>
+  <div class="contenedor">
+    <a href="producto11.html"><img class="img11" src="imagenes/img11.jpg" alt=""></a>
+    <p> ¡ELOTE ESPECIAL! </p>
+  </div>
+  <div class="contenedor">
+    <a href="producto12.html"><img class="img12" src="imagenes/img12.jpg" alt=""></a>
+    <p> ¡MANZANA LOCA! </p>
+  </div>
+  <div class="contenedor">
+    <a href="producto13.html"><img class="img13" src="imagenes/img13.jpg" alt=""></a>
+    <p> ¡CHIMICHANGA ESPECIAL! </p>
+  </div>
+</div>
+
+    
+</center>
+</body>
+</html>

@@ -1,0 +1,153 @@
+.alinear{
+
+	width: 120px;
+	height: 120px;
+	border-radius:80px ;
+}
+
+.alinear2{
+
+	width: 50px;
+	height: 30px;
+	border-radius: 10px;
+
+}
+
+.contenedor{
+
+	display: flex;
+	justify-content: center;
+
+
+}
+
+
+.carrito {
+      color: white;
+      background-color: #000000;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      float: right;
+      position: relative;
+      top: -300px;
+    }
+    .carrito:hover {
+      background-color: #000000;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000000;
+      color: white;
+      padding: 10px 20px;
+    }
+
+.texto{
+
+	width: 200px;
+	height:400px;
+	margin: 0.45px;
+}
+
+h1 { color:#cc0000;
+font-size: 70px;
+font-family: georgie;
+font-weight: bold;
+font-style: italico;	
+text-align: center;}
+
+p {color:#CC0000;
+	font-size: 20px;
+	font-family: times;
+	font-weight: medium;
+	font-style: nornal;
+	text-align: center;}
+
+h2 {color: #cc0000;
+	font-size: 30px;
+	font-family: georgie;
+	font-weight:bold;
+	font-style: italico;
+	text-align: center;}
+
+fondo{
+	width: 500%;
+	height: 500vh;
+	background-image:url(file:///C:/Users/usuario/OneDrive/Documentos/mipaginaweb/fondoopagina.jpg) ;
+	object-fit: cover;
+	background-position: center;
+}
+
+.logos{
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+}
+
+form {
+  
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Select */
+select {
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #cc0000;
+  outline: none;
+  min-width: 220px;
+  transition: border 0.3s;
+}
+
+select{
+	color: white;
+  border-color: #cc0000;
+  background-color: #000000;
+}
+.catalogo {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 10px;
+}
+
+
+.img12{
+	width: 350px;
+	height: 500px;
+	border-radius: 25px;
+	display: float;
+	margin-right:100px ;
+	display: flex;
+}
+.img10{
+	width: 350px;
+	height: 500px;
+	border-radius: 25px;
+	display: float;
+	margin-right:100px ;
+	display: flex;
+}
+.img16{
+	width: 350px;
+	height: 500px;
+	border-radius: 25px;
+	display: float;
+	margin-right:100px ;
+}
+.img19{
+	width: 350px;
+	height: 500px;
+	border-radius: 25px;
+	display: float;
+	margin-right:100px ;
+}
+
+
